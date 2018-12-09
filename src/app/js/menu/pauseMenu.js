@@ -7,9 +7,9 @@
 module.exports = function (graph) {
 
 	// PAUSE AUTOMATICALLY AFTER TIMEOUT
-	setTimeout(() => {
+	setTimeout(function() {
 		graph.paused(true);
-	}, 10000)
+	}, 10000);
 
 	var pauseMenu = {},
 		pauseButton;
