@@ -6,11 +6,6 @@
  */
 module.exports = function (graph) {
 
-	// PAUSE AUTOMATICALLY AFTER TIMEOUT
-	setTimeout(function() {
-		graph.paused(true);
-	}, 10000);
-
 	var pauseMenu = {},
 		pauseButton;
 
@@ -19,6 +14,12 @@ module.exports = function (graph) {
 	 * Adds the pause button to the website.
 	 */
 	pauseMenu.setup = function () {
+
+		// PAUSE AUTOMATICALLY AFTER TIMEOUT
+		// setTimeout(function() {
+		// 	graph.paused(true);
+		// }, 10000);
+
 		var menuEntry = d3.select("#pauseOption");
 		menuEntry.on("mouseover", function () {
 			var searchMenu = graph.options().searchMenu();
