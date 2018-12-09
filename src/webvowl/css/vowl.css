@@ -1,7 +1,9 @@
 /*-----------------------------------------------------------------
  VOWL graphical elements (part of spec) - mixed CSS and SVG styles
 -----------------------------------------------------------------*/
-
+.hideme {
+    display: none !important;
+}
 /*-------- Text --------*/
 .text {
     font-family: Helvetica, Arial, sans-serif;

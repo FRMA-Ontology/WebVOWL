@@ -374,7 +374,9 @@ module.exports = function (graphContainerSelector) {
         graphContainer = d3.selectAll(options.graphContainerSelector())
             .append("svg")
             .classed("vowlGraph", true)
-            .attr("width", options.width())
+            // .attr("width", options.width())
+            .attr("width", "100%")
+            .attr("style", "width: 100%;")
             .attr("height", options.height())
             .call(zoom)
             .append("g");
@@ -482,7 +484,8 @@ module.exports = function (graphContainerSelector) {
     graph.updateCanvasContainerSize = function () {
         if (graphContainer) {
                 var svgElement = d3.selectAll(".vowlGraph");
-                svgElement.attr("width", options.width());
+                // svgElement.attr("width", options.width());
+                svgElement.attr("width", "100%");
                 svgElement.attr("height", options.height());
                 graphContainer.attr("transform", "translate(" + graphTranslation + ")scale(" + zoomFactor + ")");
             }

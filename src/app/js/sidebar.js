@@ -459,12 +459,12 @@ module.exports = function (graph) {
             detailArea.classed("hidden",true);
             if (init===true) {
                 detailArea.classed("hidden",!visibleSidebar);
-                graphArea.style("width","78%");
+                // graphArea.style("width","78%");
                 graphArea.style("-webkit-animation-name","none");
                  menuArea.style("width","78%");
                  menuArea.style("-webkit-animation-name","none");
             } else {
-                graphArea.style("width","78%");
+                // graphArea.style("width","78%");
                 graphArea.style("-webkit-animation-name","sbCollapseAnimation");
                 graphArea.style("-webkit-animation-duration","0.5s");
                  menuArea.style("width","78%");

@@ -25,7 +25,7 @@
 				to run WebVOWL.
 				<label id="killWarning">Hide warning</label>
 			</div>
-             <div class="noselect" ><span id="sidebarExpandButton"> > </span></div>
+             <div class="noselect hideme" ><span id="sidebarExpandButton"> > </span></div>
 			<div id="logo" class="noselect">
 			<!-- build:process -->
 			<h2>WebVOWL <br/><span><%= version %></span></h2>
@@ -148,7 +148,7 @@
 						href="#" id="locateSearchResult">&#8982;
 					</a>
 				</li>
-				<li id="c_select"  >
+				<li class="hideme" id="c_select"  >
 						<a draggable="false" href="#">
 							<i>
 								<svg viewBox="0 0 24 24" class="menuElementSvgElement" >
@@ -158,7 +158,7 @@
 								</svg>
 							</i> Ontology</a>
 				</li>
-				<li id="c_export"  ><a draggable="false" href="#">
+				<li class="hideme" id="c_export"  ><a draggable="false" href="#">
 					<i>
 						<svg viewBox="0 0 24 24" class="menuElementSvgElement" >
 							<g><path  style="fill : #fff; stroke-width:0;"  d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z"
@@ -223,7 +223,7 @@
 			<p class="noselect" id="zoomOutButton">-</p>
 		</div>
 	</section>
-	<aside id="detailsArea" >
+	<aside id="detailsArea" class="hideme">
 		<section id="generalDetails">
 			<h1 id="title"></h1>
 			<span><a id="about" href=""></a></span>

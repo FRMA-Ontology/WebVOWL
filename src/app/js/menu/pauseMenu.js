@@ -6,6 +6,11 @@
  */
 module.exports = function (graph) {
 
+	// PAUSE AUTOMATICALLY AFTER TIMEOUT
+	setTimeout(() => {
+		graph.paused(true);
+	}, 10000)
+
 	var pauseMenu = {},
 		pauseButton;
 
